@@ -67,6 +67,7 @@ export class TasksPage extends Component {
 
   render() {
     return (
+      <>
       <div className="g-row">
         <div className="g-col">
           <TaskForm handleSubmit={this.props.createTask} />
@@ -83,6 +84,7 @@ export class TasksPage extends Component {
 
         {this.props.notification.display ? this.renderNotification() : null}
       </div>
+     </>
     );
   }
 }
